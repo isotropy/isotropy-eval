@@ -4,11 +4,6 @@ import invoke from "../isotropy-eval";
 import app from "./app";
 
 describe("Isotropy Eval", () => {
-  it("Should call default function", async () => {
-    const result = await invoke("", app);
-    result.should.equal("This is the home page.");
-  })
-
   it("Should call property someProp", async () => {
     const result = await invoke("someProp", app);
     result.should.equal("Hello, world.");
