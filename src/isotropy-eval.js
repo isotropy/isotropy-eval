@@ -125,7 +125,7 @@ import * as acorn from "acorn";
     }
   }
 */
-export async function invoke(strInvoke, app, argsDict = {}, options = { default: "index" }) {
+export default async function (strInvoke, app, argsDict = {}, options = { default: "index" }) {
   strInvoke = strInvoke || options.default;
 
   const ast = acorn.parse(strInvoke);

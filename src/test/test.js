@@ -1,6 +1,6 @@
 import 'source-map-support/register';
 import should from 'should';
-import { invoke } from "../isotropy-eval";
+import invoke from "../isotropy-eval";
 import app from "./app";
 
 describe("Isotropy Eval", () => {
